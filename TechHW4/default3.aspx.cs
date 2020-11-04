@@ -7,17 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace TechHW4
 {
-    public partial class default1 : System.Web.UI.Page
+    public partial class default3 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-
-
-
-
-
     }
 }

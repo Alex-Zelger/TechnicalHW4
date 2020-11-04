@@ -1,16 +1,45 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace TechHW4
 {
     public partial class default2 : System.Web.UI.Page
     {
+        DataTable DTable;
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("id");
+            dt.Columns.Add("Perscription");
+            dt.Columns.Add("Quantity");
+
+            var dr = dt.NewRow();
+            dr["id"] = 1;
+            dr["Perscription"] = "Dog Medication";
+            dr["Quantity"] = 5;
+            dt.Rows.Add(dr);
+
+            var dr2 = dt.NewRow();
+            dr["id"] = 2;
+            dr["Perscription"] = "Cat Medication";
+            dr["Quantity"] = 12;
+            dt.Rows.Add(dr2);
+
+            var dr3 = dt.NewRow();
+            dr["id"] = 3;
+            dr["Perscription"] = "Bird Medication";
+            dr["Quantity"] = 1;
+            dt.Rows.Add(dr3);
+
+            gvOrders.DataSource = dt;
+            gvOrders.DataBind();
 
         }
     }

@@ -1,0 +1,80 @@
+﻿html {
+    min-height: 100vh;
+}
+body {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.faded {
+    opacity: 0.8
+}
+.fill {
+    min-height: 100vh;
+    height: 100%;
+}
+.landing {
+    height: 100%;
+    min-height: calc(100% - 56px);
+    padding-top: 56px;
+}
+
+.btn{
+    background-color: white;
+}
+
+.heading {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-outline {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+    .btn-outline:hover {
+        opacity: 1;
+    }
+
+.lang {
+    height: 60px;
+    transition: 0.3s;
+}
+
+.contacticon {
+    font-size: 65px;
+}
+
+    .contacticon a {
+        color: rgb(33, 37, 41);
+    }
+
+.course {
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .course h5 {
+        margin: 0;
+    }
+
+.next {
+    font-size: 65px;
+}
+
+    .next a {
+        color: rgb(33, 37, 41);
+    }
+
+

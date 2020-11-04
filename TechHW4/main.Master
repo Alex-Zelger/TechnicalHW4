@@ -1,20 +1,33 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.Master.cs" Inherits="TechHW4.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.Master.cs" Inherits="TechHW4.main" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/restaurant.css" rel="stylesheet" />
+    <script src="js/bootstrap.js"></script>
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <h1 style="color:blue">Master Page</h1>          
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">  
+                <a class="navbar-brand" href="#">Pet MEDs</a>  
+            </div> 
+            <ul class="nav navbar-nav">  
+                <li><asp:Button class="btn btn-outline" ID="btnOrder" runat="server" Text="Order" OnClick="btnOrder_Click" /></li>
+                <li><asp:Button class="btn btn-outline" ID="btnOrderList" runat="server" Text="Manage Orders" OnClick="btnOrderList_Click" /></li>
+                <li><asp:Button class="btn btn-outline" ID="btnProcessing" runat="server" Text="Process Orders" OnClick="btnProcessing_Click" /></li>
+            </ul> 
+         </div>  
+      </nav>
+
+        <asp:ContentPlaceholder ID="body" runat="server"></asp:ContentPlaceholder>
+
     </form>
 </body>
 </html>
