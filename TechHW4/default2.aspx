@@ -10,9 +10,10 @@
                 </h2>
             </div>
 
-
+                        <div class="d-flex row justify-content-center mx-auto py-3">
     <asp:GridView ID="gvOrders" runat="server">
     </asp:GridView>
+                            </div>
 
                         </div>
 </asp:Content>

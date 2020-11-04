@@ -11,7 +11,6 @@ namespace TechHW4
 {
     public partial class default2 : System.Web.UI.Page
     {
-        DataTable DTable;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -27,15 +26,15 @@ namespace TechHW4
             dt.Rows.Add(dr);
 
             var dr2 = dt.NewRow();
-            dr["id"] = 2;
-            dr["Perscription"] = "Cat Medication";
-            dr["Quantity"] = 12;
+            dr2["id"] = 2;
+            dr2["Perscription"] = "Cat Medication";
+            dr2["Quantity"] = 12;
             dt.Rows.Add(dr2);
 
             var dr3 = dt.NewRow();
-            dr["id"] = 3;
-            dr["Perscription"] = "Bird Medication";
-            dr["Quantity"] = 1;
+            dr3["id"] = 3;
+            dr3["Perscription"] = "Bird Medication";
+            dr3["Quantity"] = 1;
             dt.Rows.Add(dr3);
 
             gvOrders.DataSource = dt;
